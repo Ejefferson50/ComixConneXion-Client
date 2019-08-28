@@ -1,15 +1,19 @@
-<div class="container-fluid">
+<div>
   <h2>Log-in</h2>
-  <form name="loginForm">
+  <form [formGroup]="loginForm">
 
-    <div class="formGroup">
-      <label>Username</label>
-      <input type="text" formControlName="userName" class="formControl" >
+    <div class="form-group">
+      <label>
+        Username
+      </label>
+      <input type="text" formControlName="userName" class="form-control" >
     </div>
 
-    <div class="formGroup">
-      <label>Password</label>
-      <input type="password" formControlName="password" class="formControl">
+    <div class="form-group">
+      <label>
+        Password
+      </label>
+      <input type="password" formControlName="password" class="form-control">
     </div>
 
 
