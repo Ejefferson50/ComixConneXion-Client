@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {User} from '../models/User';
+import {User} from '../../models/User';
 import {FormBuilder, FormGroup} from '@angular/forms';
+import {PasswordValidator} from '../validators/password.validator';
 
 @Component({
   selector: 'app-register-component',
@@ -19,7 +20,8 @@ export class RegisterComponentComponent implements OnInit {
       username: [''],
       password: [''],
       confirmPassword: ['']
-    });
+    }, {validator: PasswordValidator}
+    );
   }
 
 }
