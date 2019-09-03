@@ -4,16 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponentComponent } from './component/user-component/user-component.component';
-import { LoginComponentComponent } from './component/login-component/login-component.component';
+import { LoginComponent } from './component/login/login.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { RegisterComponentComponent } from './component/register-component/register-component.component';
+import { RegisterComponent } from './component/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponentComponent,
-    LoginComponentComponent,
-    RegisterComponentComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

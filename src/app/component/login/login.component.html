@@ -1,15 +1,16 @@
-<div>
+<div class="container-fluid">
   <h2>Log-in</h2>
   <form [formGroup]="loginForm">
 
-    <div class="form-group">
+
+    <div class="form-group" class="col-md-2">
       <label>
         Username
       </label>
       <input type="text" formControlName="userName" class="form-control" >
     </div>
 
-    <div class="form-group">
+    <div class="form-group" class="col-md-2">
       <label>
         Password
       </label>
@@ -19,5 +20,5 @@
 
   </form>
 </div>
-<button type="button" class="btn btn-primary">Login</button>
-<button type="button" class="btn btn-link">Register here</button>
+<button [disabled]="loginForm.invalid" type="submit" class="btn btn-info">Login</button>
+<a routerLink="/register"> <button type="button" class="btn btn-link">Register here</button></a>

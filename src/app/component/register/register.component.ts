@@ -5,10 +5,10 @@ import {PasswordValidator} from '../validators/password.validator';
 
 @Component({
   selector: 'app-register-component',
-  templateUrl: './register-component.component.html',
-  styleUrls: ['./register-component.component.css']
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class RegisterComponentComponent implements OnInit {
+export class RegisterComponent implements OnInit {
   user: User;
   registerForm: FormGroup;
 
